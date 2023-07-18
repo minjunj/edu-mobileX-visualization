@@ -1,0 +1,17 @@
+{
+  "name": "mobileX_visualization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "qrious": "^4.0.2"
+  }
+}

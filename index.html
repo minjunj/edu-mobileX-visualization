@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Graduation Shcool MobileXexperience Lab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lato", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+      }
+
+      /* Create a Parallax Effect */
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url("/assets/background.jpg"); /* 백그라운드 이미지 주소 */
+        min-height: 100%;
+      }
+
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("/assets/background.jpg"); /* 백그라운드 이미지 주소 */
+        min-height: 400px;
+      }
+
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("/assets/background.jpg"); /* 백그라운드 이미지 주소 */
+        min-height: 400px;
+      }
+
+      .w3-wide {
+        letter-spacing: 10px;
+      }
+      .w3-hover-opacity {
+        cursor: pointer;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+        >
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT</a
+        >
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space: nowrap">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
+          >GIST <span class="w3-hide-small">AI</span> Graduation school</span
+        ><!-- 메인로고 폰트 -->
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT ME</h3>
+      <p class="w3-center"><em>I love GIST</em></p>
+      <p>
+        자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란
+        입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다.
+        자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란
+        입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다.
+        자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란
+        입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다.
+        자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란
+        입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다.
+        자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란
+        입니다. 자기소개 란 입니다. 자기소개 란 입니다. 자기소개 란 입니다.
+        자기소개 란 입니다.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p>
+            <b><i class="fa fa-user w3-margin-right"></i>My Name</b>
+          </p>
+          <br />
+          <!-- 프로필 사진-->
+          <img
+            src="/assets/site_logo.png"
+            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            alt="Photo of Me"
+            width="500"
+            height="333"
+          />
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>
+            작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은 자기소개 란
+            입니다. 작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은
+            자기소개 란 입니다. 작은 자기소개 란 입니다. 작은 자기소개 란
+            입니다. 작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은
+            자기소개 란 입니다. 작은 자기소개 란 입니다. 작은 자기소개 란
+            입니다. 작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은
+            자기소개 란 입니다. 작은 자기소개 란 입니다. 작은 자기소개 란
+            입니다. 작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은
+            자기소개 란 입니다. 작은 자기소개 란 입니다. 작은 자기소개 란
+            입니다. 작은 자기소개 란 입니다. 작은 자기소개 란 입니다. 작은
+            자기소개 란 입니다. 작은 자기소개 란 입니다.
+          </p>
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+      <p class="w3-wide"><i class="fa fa-address-card"></i>자격증</p>
+      <!-- <p class="w3-wide"><i class="insert want icon name "></i>Photography</p> 
+        https://www.w3schools.com/icons/fontawesome_icons_webapp.asp 해당 링크를 참고하면 원하는 아이콘을 다운로드 없이 사용 가능합니다.
+      -->
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 90%"
+        >
+          <!-- style="width: 90%"를 0~100까지 원하는 숫자를 넣고 아래의 "90%" 폰트를 맞추면 막대기 표시 길이 변경가능-->
+          90%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 85%"
+        >
+          85%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 7%"
+        >
+          75%
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">MY WORK</h3>
+      <p class="w3-center">
+        <em>Here are some of my latest lorem work ipsum tipsum.<br /> </em>
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <!-- 포트폴리로 하단 my work에서 이미지들과 이미지들을 클릭 했을 떄의 설명을 변경할 수 있습니다.-->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img
+            src="/assets/exam1.jpeg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Odong express reject opinion"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="/assets/Odong2.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Odong2"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="/assets/exam2.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Odong3"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="/assets/Odong4.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Odong4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-large w3-black w3-display-topright"
+        title="Close Modal Image"
+        ><i class="fa fa-remove"></i
+      ></span>
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <!-- CONTACT page  입니다.-->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img
+            src="/assets/Odong1.png"
+            class="w3-image w3-round"
+            style="width: 100%"
+          />
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <p>&nbsp;</p>
+            <i
+              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            >
+            </i>
+            Gwanju, KR<br />
+            <i
+              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Phone: +82 010-1234-5678<br />
+            <i
+              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Email: mail@mail.com<br />
+          </div>
+          <p>
+            Swing by for a cup of <i class="fa fa-coffee"></i>, or take my
+            Wensite QRcode!
+          </p>
+          <!-- 현재 웹사이트의 주소를 qrcode화 해줍니다. -->
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <canvas id="roomCode" style="border-radius: 20%"></canvas>
+            <script src="node_modules/qrious/dist/qrious.js"></script>
+            <script type="text/javascript">
+              document.addEventListener("DOMContentLoaded", function () {
+                const canvas = document.getElementById("roomCode");
+                const url = location.href;
+                const qr = new QRious({
+                  element: canvas,
+                  value: url,
+                  size: 110,
+                  foreground: "#f74040",
+                  background: "#ffa8a8",
+                });
+              });
+            </script>
+          </p>
+
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
