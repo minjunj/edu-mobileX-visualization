@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM docker.io/library/nginx:latest
 RUN mkdir -p /etc/nginx/ssl
 
 COPY cert.pem /etc/nginx/ssl/cert.pem
